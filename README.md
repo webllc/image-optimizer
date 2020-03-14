@@ -1,4 +1,4 @@
-# Image Optimizer [![Build Status](https://travis-ci.org/psliwa/image-optimizer.svg?branch=master)](https://travis-ci.org/psliwa/image-optimizer)
+# Image Optimizer [![Build Status](https://travis-ci.org/webllc/image-optimizer.svg?branch=master)](https://travis-ci.org/webllc/image-optimizer)
 
 This library is handy and very easy to use optimizer for image files. It uses [optipng][2], [pngquant][1], [jpegoptim][6], [svgo][9] and few more libraries,
 so before use it you should install proper libraries on your server. Project contains Vagrantfile that defines testing
@@ -10,12 +10,12 @@ Thanks to ImageOptimizer and libraries that it uses, your image files can be **1
 
 Using composer:
 
-    composer require ps/image-optimizer
+    composer require webllc/image-optimizer
 
 # Basic usage
 
 ```php
-$factory = new \ImageOptimizer\OptimizerFactory();
+$factory = new webllc\ImageOptimizer\OptimizerFactory();
 $optimizer = $factory->get();
 
 $filepath = /* path to image */;
@@ -74,7 +74,7 @@ You can pass array of options as first argument of `ImageOptimizer\OptimizerFact
 optionally `Psr\LoggerInterface`.
 
 ```php
-$factory = new \ImageOptimizer\OptimizerFactory(array('ignore_errors' => false), $logger);
+$factory = new webllc\ImageOptimizer\OptimizerFactory(array('ignore_errors' => false), $logger);
 ```
 
 # Supported optimizers
@@ -93,7 +93,7 @@ $factory = new \ImageOptimizer\OptimizerFactory(array('ignore_errors' => false),
 * `gifsicle` - [homepage][8]
 * `svgo` - [homepage][9]
 
-You can obtain concrete optimizer by passing his name to `ImageOptimizer\OptimizerFactory`::`get` method:
+You can obtain concrete optimizer by passing his name to `webllc\ImageOptimizer\OptimizerFactory`::`get` method:
 
 ```php
 //default optimizer is `smart`
@@ -111,7 +111,7 @@ $jpgOptimizer = $factory->get('jpegoptim');
 You can easily define custom optimizers:
 
 ```php
-$factory = new \ImageOptimizer\OptimizerFactory(array('custom_optimizers' => array(
+$factory = new webllc\ImageOptimizer\OptimizerFactory(array('custom_optimizers' => array(
     'some_optimizier' => array(
         'command' => 'some_command',
         'args' => array('-some-flag')
@@ -141,7 +141,7 @@ class StdoutLogger extends \Psr\Log\AbstractLogger {
     }
 }
 
-$factory = new \ImageOptimizer\OptimizerFactory(array(), new StdoutLogger());
+$factory = new webllc\ImageOptimizer\OptimizerFactory(array(), new StdoutLogger());
 
 $factory->get()->optimize('yourfile.jpg');
 
