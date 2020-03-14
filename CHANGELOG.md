@@ -1,5 +1,7 @@
 CHANGELOG
 =========
+* 2.1.0 (2020-03-14) 
+   * Change namespace and public packagist.org
 
 * 2.0.1 (2019-09-24)
 
