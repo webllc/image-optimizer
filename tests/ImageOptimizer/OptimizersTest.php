@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
-use ImageOptimizer\Assertion\ImageAssertion;
-use ImageOptimizer\Exception\CommandNotFound;
+use webllc\ImageOptimizer\Assertion\ImageAssertion;
+use webllc\ImageOptimizer\Exception\CommandNotFound;
 use PHPUnit\Framework\TestCase;
 
 class OptimizersTest extends TestCase
@@ -77,7 +77,7 @@ class OptimizersTest extends TestCase
 
     /**
      * @test
-     * @expectedException \ImageOptimizer\Exception\Exception
+     * @expectedException webllc\ImageOptimizer\Exception\Exception
      */
     public function givenUnsupportedFileForOptimizer_givenIgnoreErrorDisabled_throwEx()
     {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer\TypeGuesser;
+namespace webllc\ImageOptimizer\TypeGuesser;
 
 
 class SmartTypeGuesserTest extends AbstractTypeGuesserTest

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer\Assertion;
+namespace webllc\ImageOptimizer\Assertion;
 
-use ImageOptimizer\ImageSimilarityJudge;
+use webllc\ImageOptimizer\ImageSimilarityJudge;
 use PHPUnit\Framework\Assert;
 
 class ImageAssertion

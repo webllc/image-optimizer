@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
 use PHPUnit\Framework\TestCase;
 
@@ -13,7 +13,7 @@ class CommandTest extends TestCase
     /**
      * Check if a CommandNotFound exception is thrown when the exit code is not 127.
      *
-     * @expectedException \ImageOptimizer\Exception\CommandNotFound
+     * @expectedException webllc\ImageOptimizer\Exception\CommandNotFound
      * @expectedExceptionMessage Command "command-does-not-exist" not found.
      */
     public function testCommandNotFound()

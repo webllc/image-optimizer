@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
 use function imagecolorat;
 use function imagecolorsforindex;
-use ImageOptimizer\TypeGuesser\SmartTypeGuesser;
-use ImageOptimizer\TypeGuesser\TypeGuesser;
+use webllc\ImageOptimizer\TypeGuesser\SmartTypeGuesser;
+use webllc\ImageOptimizer\TypeGuesser\TypeGuesser;
 use InvalidArgumentException;
 
 class ImageSimilarityJudge

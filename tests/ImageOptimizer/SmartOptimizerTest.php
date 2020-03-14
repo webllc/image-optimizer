@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
 
-use ImageOptimizer\TypeGuesser\TypeGuesser;
+use webllc\ImageOptimizer\TypeGuesser\TypeGuesser;
 use PHPUnit\Framework\TestCase;
 
 class SmartOptimizerTest extends TestCase
@@ -27,7 +27,7 @@ class SmartOptimizerTest extends TestCase
 
     protected function setUp()
     {
-        $this->internalOptimizer = $this->createMock('ImageOptimizer\\Optimizer');
+        $this->internalOptimizer = $this->createMock('webllc\\ImageOptimizer\\Optimizer');
 
         $this->optimizer = new SmartOptimizer([
             self::SUPPORTED_TYPE => $this->internalOptimizer,
@@ -57,7 +57,7 @@ class SmartOptimizerTest extends TestCase
 
     /**
      * @test
-     * @expectedException \ImageOptimizer\Exception\Exception
+     * @expectedException webllc\ImageOptimizer\Exception\Exception
      */
     public function givenUnsupportedFilepath_throwException()
     {
