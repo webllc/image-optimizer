@@ -8,12 +8,19 @@
     "authors": [
         {
             "name": "Piotr Sliwa",
-            "email": "peter.pl7@gmail.com"
+            "email": "peter.pl7@gmail.com",
+            "role": "Author, Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../image-optimizer"
         }
     ],
     "autoload": {
-        "psr-0": {
-            "webllc\\ImageOptimizer": "src/"
+        "psr-4": {
+            "webllc\\ImageOptimizer\\": "src/ImageOptimizer"
         }
     },
     "require": {
