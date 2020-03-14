@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
 
-use ImageOptimizer\Exception\Exception;
-use ImageOptimizer\TypeGuesser\TypeGuesser;
+use webllc\ImageOptimizer\Exception\Exception;
+use webllc\ImageOptimizer\TypeGuesser\TypeGuesser;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Symfony\Component\OptionsResolver\OptionsResolver;

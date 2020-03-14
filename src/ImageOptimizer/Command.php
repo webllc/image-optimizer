@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
 use function function_exists;
-use ImageOptimizer\Exception\CommandNotFound;
-use ImageOptimizer\Exception\Exception;
+use webllc\ImageOptimizer\Exception\CommandNotFound;
+use webllc\ImageOptimizer\Exception\Exception;
 use Symfony\Component\Process\Exception\RuntimeException;
 use Symfony\Component\Process\Process;
 

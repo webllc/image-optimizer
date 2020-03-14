@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer\Exception;
+namespace webllc\ImageOptimizer\Exception;
 
 class CommandNotFound extends Exception
 {

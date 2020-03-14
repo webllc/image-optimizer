@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
-use ImageOptimizer\Exception\Exception;
-use ImageOptimizer\TypeGuesser\SmartTypeGuesser;
-use ImageOptimizer\TypeGuesser\TypeGuesser;
+use webllc\ImageOptimizer\Exception\Exception;
+use webllc\ImageOptimizer\TypeGuesser\SmartTypeGuesser;
+use webllc\ImageOptimizer\TypeGuesser\TypeGuesser;
 
 class SmartOptimizer implements Optimizer
 {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
 
-use ImageOptimizer\Exception\Exception;
+use webllc\ImageOptimizer\Exception\Exception;
 
 interface Optimizer
 {

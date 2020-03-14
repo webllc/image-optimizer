@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ImageOptimizer;
+namespace webllc\ImageOptimizer;
 
 class ChangedOutputOptimizer implements WrapperOptimizer
 {
